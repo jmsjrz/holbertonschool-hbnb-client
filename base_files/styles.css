@@ -1,0 +1,212 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+/* Apply the new fonts */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;/* Fond gris clair */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 15px;
+}
+
+p, a, button, input, select, textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Header */
+nav {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space out items to the edges */
+    align-items: center; /* Center align items vertically */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+header {
+    background-color: #ff9500;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    height: 50px;
+}
+
+.login-button {
+    background-color: #ff9500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-button:hover {
+    background-color: #e08700;
+}
+
+/* Footer */
+footer {
+    background-color: #ff9500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+/* Filter section styles */
+#filter {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center the entire filter section horizontally */
+    margin-bottom: 20px; /* Space below the filter section */
+}
+
+#filter label, #filter select {
+    margin: 0 10px; /* Space around label and select */
+}
+#filter label {
+    font-weight: bold; /* Bold text for labels */
+}
+/* Place Cards */
+.place-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    flex:1; /* Flex properties for responsive layout */
+    min-width: 300px; /* Maximum width for the card */
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.place-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details-button {
+    background-color: #ff9500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.details-button:hover {
+    background-color: #e08700;
+}
+
+/* Place Details - les cadres avec un effet a mettre*/
+.place-details {
+    border: 1px solid #cfcdcd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.place-image-large {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.place-info {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+/* flexbox*/
+#places-list {
+    display: flex; /* Use flexbox layout */
+    gap:0px; /* Space between items */
+    flex-wrap: wrap; /* Allow elements to wrap to the next line */
+    justify-content: space-around; /* Distribute space around items */
+}
+/* Review Cards */
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #fff;
+    text-align: left;
+    flex: 0 1 calc(33.333% - 40px); /* Flex properties for responsive layout */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.review-card p:first-child strong {
+    display:block;
+    margin-bottom: 10px;
+}
+.review-card p:last-child strong {
+    font-weight: normal;
+}
+.add-review {
+    margin: 20px;
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review textarea {
+    resize: vertical;
+    padding: 10px;
+    padding-left: 0px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff; /* Fond blanc pour le champ de texte */
+}
+
+.add-review select,
+.add-review button {
+    padding: 10px;
+    padding-left: 0px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add-review button {
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-review button:hover {
+    background-color: #e08700;
+}
+
+.add-review label {
+    font-weight: bold;
+    padding-bottom: 5px;
+}

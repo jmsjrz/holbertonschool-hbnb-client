@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Place Details</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+        <a href="login.html" class="login-button" id="login">Login</a>
+    </header>
+    <main>
+        <h1>Beautiful Beach House</h1>
+        <div class="place-details">
+            <div id="place-info"></div>
+            <ul id="place-amenities"></div>
+        </div>
+        <h2>Reviews</h2>
+        <div id="reviews-list"></div>
+        <div id="add-review-form">
+            <h2>Add a Review</h2>
+            <div class="add-review">
+                <form>
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 HBnB Evolution. All rights reserved.
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
